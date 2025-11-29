@@ -1,0 +1,198 @@
+/* =========================================
+   IMPORT FONT & GLOBAL 
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+button, a {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+
+/* =========================================
+   LEFT PANEL (WHITE SECTION)
+========================================= */
+.left-panel {
+    position: relative;
+    flex: 1;
+    background-color: #fff;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #000;
+    z-index: 1;
+}
+
+/* Logo */
+.logo .mini-logo {
+    height: 30px;
+    width: auto;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+/* Background Wave Image */
+.wave-img {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 60%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 0;
+}
+
+/* Illustration Image */
+.illustration-img {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translateY(-50%);
+    max-width: 50%;
+    height: auto;
+    z-index: 2;
+}
+
+
+
+/* =========================================
+   RIGHT PANEL (BLUE SECTION)
+========================================= */
+.right-panel {
+    flex-basis: 40%;
+    background-color: #003399;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/* =========================================
+   VERIFICATION BOX
+========================================= */
+.verifikasi-box {
+    width: 100%;
+    max-width: 400px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    z-index: 3;
+}
+
+
+
+/* =========================================
+   HEADER TEXTS
+========================================= */
+.header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.header p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+/* =========================================
+   INPUT CODE BOXES
+========================================= */
+.code-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+
+.code-input {
+    width: 12%;
+    height: 60px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+
+
+/* =========================================
+   BUTTON
+========================================= */
+.btn-verifikasi {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffc900;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20;
+    transition: background-color 0.3s;
+}
+
+.btn-verifikasi:hover {
+    background-color: #e6b800;
+}
+
+
+
+/* =========================================
+   LINK BACK
+========================================= */
+.back-link {
+    text-align: right;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.back-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}

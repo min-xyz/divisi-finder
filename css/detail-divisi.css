@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #003C96;
+    flex: 1;
+}
+
+.logo span {
+    color: #FFCC00;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav-links li a:hover {
+    color: #003C96;
+}
+
+/* HEADER */
+.divisi-header {
+    background: #003C96;
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+    position: relative;
+
+    /* FIX supaya lebar penuh */
+    width: 100%;
+}
+
+.back-btn {
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.divisi-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+
+    /* FIX agar lebih mirip */
+    margin-bottom: 10px;
+}
+
+.divisi-header p {
+    margin-top: 12px;
+    font-size: 16px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 26px;
+}
+
+.back-btn img {
+    width: 40px;
+}
+
+/* CONTENT WRAPPER */
+.divisi-content {
+    padding: 50px 80px;
+    background: white;
+
+    /* Border radius biar mirip */
+    border-radius: 0 0 12px 12px;
+}
+
+/* GRID BESAR (SEPERTI GAMBAR) */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; /* Biar komposisi mirip */
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* BAGIAN BAWAH: PROSPEK + FOTO */
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.content-image img {
+    width: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+/* Teks list */
+.content-text h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #003C96;
+    margin-bottom: 12px;
+}
+
+.content-text ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.content-text li {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.content-text p {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .divisi-content {
+        padding: 25px;
+    }
+
+    .content-grid,
+    .bottom-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .divisi-header {
+        padding: 40px 25px;
+    }
+
+    .back-btn {
+        left: 15px;
+        top: 15px;
+    }
+}

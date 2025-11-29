@@ -1,0 +1,191 @@
+/* ========================================= UNIVERSAL RESET ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* ========================================= NAVBAR ========================================= */
+.navbar {
+    width: 100%;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #003C96;
+}
+
+.logo span {
+    color: #FFCC00;
+}
+
+.logo a {
+    all: unset;
+    cursor: pointer;
+}
+
+/* ========================================= LAYOUT ========================================= */
+.wrapper {
+    display: flex;
+    background: white;
+    min-height: calc(100vh - 67px);
+}
+
+/* LEFT SIDE */
+.left-box {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.back-text img {
+    width: 30px;
+}
+
+.back-btn {
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.back-text h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* QR BOX */
+.qr-box {
+    margin-top: 20px;
+    width: 360px;
+    height: 360px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.qr-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ========================================= RIGHT SIDE BLUE BACKGROUND ========================================= */
+.right-box {
+    flex: 1;
+    background: #003C96;
+    padding: 60px 40px;
+    position: relative;
+    color: white;
+    max-width: 50vw;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.right-box::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    background: white;
+    border-radius: 60% 0 0 60%;
+}
+
+/* SUMMARY CARD */
+.summary-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    width: 80%;
+    color: #000;
+    margin: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card .title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.summary-card .title img {
+    width: 40px;
+}
+
+.label {
+    font-size: 13px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.time {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.idpay {
+    font-weight: 600;
+}
+
+.price {
+    font-size: 26px;
+    font-weight: 800;
+    margin-top: 4px;
+}
+
+/* BUTTON QR */
+.pay-btn {
+    margin: 25px 0 0 0;
+    margin-top: 25px;
+    width: 80%;
+    padding: 12px 0;
+    background: #FFD84D;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pay-btn:hover {
+    background: #f2c93f;
+}

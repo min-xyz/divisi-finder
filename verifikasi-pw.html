@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifikasi Kode | VINIX7</title>
+    <link rel="stylesheet" href="css/verifikasi-pw.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" class="mini-logo">
+                </a>
+            </div>
+
+            <img src="img/wavesloginregistrasi.png" class="wave-img">
+
+            <img src="img/verifikasipw.png" alt="Verifikasi Illustration" class="illustration-img"> 
+
+        </div>
+
+        <div class="right-panel">
+            <div class="verifikasi-box">
+                <div class="header">
+                    <h2>RESET PASSWORD</h2>
+                    <p>Masukkan kode verifikasi yang telah kami kirim ke email Anda</p>
+                </div>
+                
+                <form action="set-pw-baru.html" class="verifikasi-form">
+                    
+                    <div class="code-inputs">
+                        <input type="text" maxlength="1" class="code-input" id="code-1" name="code[]" required>
+                        <input type="text" maxlength="1" class="code-input" id="code-2" name="code[]" required>
+                        <input type="text" maxlength="1" class="code-input" id="code-3" name="code[]" required>
+                        <input type="text" maxlength="1" class="code-input" id="code-4" name="code[]" required>
+                        <input type="text" maxlength="1" class="code-input" id="code-5" name="code[]" required>
+                        <input type="text" maxlength="1" class="code-input" id="code-6" name="code[]" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-verifikasi">Verifikasi</button>
+                </form>
+                
+                <div class="back-link">
+                    <p><a href="reset-pw.html">< Back</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

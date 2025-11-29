@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Test – VINIX7</title>
+    <link rel="stylesheet" href="css/hasil-test.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+    <a href="index.html">
+        <img src="img/logo.png" class="logo-vinix">
+    </a>
+</div>
+
+
+    <div class="container">
+        <div class="main-content"> 
+            <h1 class="greeting">Selamat Pagi Martin !</h1>
+
+                        <h2 class="section-title">Hasil Test Link and Match Skill</h2>
+
+            <div class="score-row">
+                <div class="score-card">
+                    <h3 class="score">85%</h3>
+                    <p class="division">Divisi Junior Web Dev & UI/UX</p>
+                    <p class="desc">Cocok karena memiliki kreativitas tinggi, kemampuan teknologi baik, dan komunikasi visual yang kuat.</p>
+                </div>
+
+                <div class="score-card">
+                    <h3 class="score">78%</h3>
+                    <p class="division">Divisi Junior Brand Designer & Marketer</p>
+                    <p class="desc">Dipilih karena kreativitas stabil, pemahaman audiens cukup bagus, serta kemampuan analisis tren.</p>
+                </div>
+
+                <div class="score-card">
+                    <h3 class="score">74%</h3>
+                    <p class="division">Divisi Junior Project Management</p>
+                    <p class="desc">Dipilih karena kemampuan koordinasi, ketepatan waktu, dan problem solving yang berkembang.</p>
+                </div>
+            </div>
+
+                        <h2 class="section-title">Insight Pengembangan Skill</h2>
+
+            <div class="insight-box">
+                <div class="insight-item">
+                    <span class="num">1</span>
+                    <p>Perkuat manajemen waktu untuk meningkatkan efektivitas kerja dan koordinasi tim.</p>
+                </div>
+
+                <div class="insight-item">
+                    <span class="num">2</span>
+                    <p>Asah kemampuan komunikasi agar lebih mudah menyampaikan ide dan bekerja sama.</p>
+                </div>
+
+                <div class="insight-item">
+                    <span class="num">3</span>
+                    <p>Tingkatkan skill analisis untuk mendukung pengambilan keputusan dan pemecahan masalah.</p>
+                </div>
+            </div>
+        </div>
+                        <div class="sidebar">
+            <div class="profile-box">
+                <img src="img/user.png" class="profile-img">
+            </div>
+
+            <div class="chart-box">
+                <canvas id="radarChart"></canvas>
+            </div>
+
+            <div class="btn-row">
+                <button class="btn save">Simpan Hasil</button>
+                <button class="btn learn" onclick="location.href='divisi.html'">
+    Pelajari Divisi
+</button>
+
+                <button class="btn share">☰</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const ctx = document.getElementById('radarChart');
+
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Kreatif', 'Teknologi', 'Komunikasi', 'Manajemen', 'Marketing', 'Analisis'],
+                datasets: [{
+                    label: 'Skill',
+                    data: [80, 75, 60, 55, 65, 85],
+                    fill: true,
+                    backgroundColor: 'rgba(57, 86, 255, 0.4)',
+                    borderColor: '#3956FF',
+                    borderWidth: 2
+                }]
+            }
+        });
+    </script>
+
+</body>
+</html>

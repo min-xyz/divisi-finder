@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #e6e6e6;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #fff;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #003C96;
+}
+
+.logo span {
+    color: #FFCC00;
+}
+
+/* WRAPPER */
+.test-wrapper {
+    display: flex;
+    padding: 40px;
+    background: #003C96;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    height: fit-content;
+}
+
+.back-btn {
+    font-size: 22px;
+    text-decoration: none;
+    color: #003C96;
+}
+
+.sidebar-title {
+    margin-top: 10px;
+    font-size: 19px;
+    color: #003C96;
+    font-weight: 600;
+}
+
+.steps-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.steps-list li {
+    background: #f4f4f4;
+    padding: 10px 14px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.steps-list li span {
+    background: #d6d6d6;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.steps-list .active {
+    background: #003C96;
+    color: #fff;
+}
+
+.steps-list .active span {
+    background: #FFCC00;
+    color: #000;
+}
+
+/* MAIN CONTENT */
+.content-box {
+    flex: 1;
+    margin-left: 40px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 14px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* PROGRESS */
+.progress-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 85%;
+    height: 8px;
+    background: #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 10%;
+    background: #FFCC00;
+    transition: .3s;
+}
+
+.progress-text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* QUESTION SECTION */
+.step-title {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #003C96;
+}
+
+.question {
+    margin-top: 12px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.choice-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.choice {
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    font-size: 15px;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.choice:hover {
+    border-color: #003C96;
+}
+
+.choice.active {
+    background: #003C96;
+    color: white;
+    border-color: #003C96;
+}
+
+/* BUTTON */
+.next-btn {
+    margin-top: 25px;
+    background: #FFCC00;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.back-btn img {
+    width: 30px;
+}
+
+.backquestion-btn {
+    margin-top: 25px;
+    background: #B8D6F2;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-top: 0;
+    display: block;
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+/* styling untuk right-buttons */
+.right-buttons {
+    display: flex; 
+    align-items: center;
+}
+
+/* **PROPERTI KUNCI:** */
+.button-link-group {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
+}
+
+/* LINK KE DIVISI */
+.division-link-wrapper {
+    align-items: center;
+    gap: 15px;
+}
+
+.division-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #003C96; 
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.division-link:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .test-wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content-box {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #003C96;
+    flex: 1;
+}
+
+.logo span {
+    color: #FFCC00;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav-links li a:hover {
+    color: #003C96;
+}
+
+/* HEADER */
+.divisi-header {
+    background: #003C96;
+    text-align: center;
+    padding: 120px 20px 60px;
+    color: white;
+}
+
+.divisi-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.divisi-header p {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+/* GRID WRAPPER */
+.divisi-grid {
+    padding: 50px 60px;
+    background: #003C96;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* CARD STYLE */
+.divisi-card {
+    padding: 40px 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    min-height: 260px;
+    transition: 0.25s ease;
+}
+
+/* ICON */
+.divisi-card img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+/* TITLE */
+.divisi-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* DESCRIPTION */
+.divisi-card p {
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.9;
+}
+
+/* DETAIL BUTTON */
+.detail-btn {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* COLOR VARIANTS */
+.lightblue {
+    background: #B8D6F2;
+    color: white;
+}
+
+.blue {
+    background: #ededed;
+    color: #003C96;
+}
+
+.red {
+    background: #c62828;
+    color: white;
+}
+
+/* HOVER EFFECT */
+.divisi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.detail-btn {
+    margin-top: auto;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CTA */
+.divisi-cta {
+    text-align: center;
+    padding: 40px 0 80px;
+    background: #003C96;
+}
+
+.cta-btn {
+    background: #ffe256;
+    padding: 14px 35px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #003C96;
+}

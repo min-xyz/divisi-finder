@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Divisi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/detail-divisi.css">
+</head>
+<body>
+
+    <!-- NAVBAR (FIXED: hanya logo & clickable) -->
+    <nav class="navbar">
+        <div class="logo" style="cursor:pointer;" onclick="location.href='index.html'">
+            VINIX<span>7</span>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="divisi-header">
+        <a href="divisi.html" class="back-btn"> <img src="img/back.png" alt=""></a>
+        <h1 id="judul">Loading...</h1>
+        <p id="deskripsi"></p>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="divisi-content">
+
+        <!-- Grid 1 -->
+        <div class="content-grid">
+            <div class="content-image">
+                <img id="img1" src="" alt="">
+            </div>
+
+            <div class="content-text">
+                <h3>Apa yang Dipelajari</h3>
+                <ul id="pelajaran"></ul>
+
+                <h3>Kenapa Penting</h3>
+                <p id="penting"></p>
+            </div>
+        </div>
+
+        <!-- Grid 2 -->
+        <div class="content-grid bottom">
+            <div class="content-text">
+                <h3>Prospek</h3>
+                <ul id="prospek"></ul>
+
+                <h3>Cocok Untuk Kamu Jika</h3>
+                <p id="cocok"></p>
+            </div>
+
+            <div class="content-image">
+                <img id="img2" src="" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <script src="divisi-data.js"></script>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const divisi = params.get("divisi");
+
+        const data = divisiData[divisi];
+
+        if (!data) {
+            document.body.innerHTML = "<h2 style='text-align:center;margin-top:50px'>Divisi tidak ditemukan</h2>";
+        }
+
+        document.getElementById("judul").innerText = data.judul;
+        document.getElementById("deskripsi").innerText = data.deskripsi;
+        document.getElementById("pelajaran").innerHTML = data.pelajaran;
+        document.getElementById("penting").innerText = data.penting;
+        document.getElementById("prospek").innerHTML = data.prospek;
+        document.getElementById("cocok").innerText = data.cocok;
+
+        document.getElementById("img1").src = data.img1;
+        document.getElementById("img2").src = data.img2;
+    </script>
+
+</body>
+</html>
